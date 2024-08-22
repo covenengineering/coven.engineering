@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Coven Engineering</title>
+		<link
+			href="./favicon-light.svg"
+			media="(prefers-color-scheme:light)"
+			rel="icon"
+		/>
+		<link
+			href="./favicon-dark.svg"
+			media="(prefers-color-scheme:dark)"
+			rel="icon"
+		/>
+		<style>
+			:root {
+				color-scheme: light dark;
+			}
+			body {
+				align-items: center;
+				background-color: light-dark(#fff, #000);
+				display: flex;
+				flex-direction: column;
+				font-family: sans-serif;
+				height: 100dvh;
+				justify-content: center;
+				margin: 0;
+			}
+			svg {
+				max-width: 50rem;
+				stroke: currentColor;
+				width: 80dvw;
+			}
+			@keyframes fade-in {
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+			path,
+			span {
+				animation: 1s ease-out forwards fade-in;
+				opacity: 0;
+			}
+			path:first-child {
+				transform: translateY(1.5px);
+			}
+			path:last-child {
+				transform: translateY(-1.5px);
+			}
+			span {
+				animation-delay: 1.5s;
+				margin-top: 2rem;
+				text-transform: uppercase;
+			}
+		</style>
+	</head>
+	<body>
+		<svg
+			fill="none"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			viewBox="0 0 90 12"
+		>
+			<title>Coven Engineering</title>
+			<path
+				class="coven"
+				d="M26.5 1.5h-4v3h4-4v3h4m-7-6-2 6-2-6m-4 0a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h2Zm-6 0h-3a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3m24 0v-6l4 6v-6"
+			/>
+			<path
+				class="engineering"
+				d="M26.5 4.5h-4v3h4-4v3h4m3 0v-6l4 6v-6m7 0h-3a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v-3m3-3v6m3 0v-6l4 6v-6m7 0h-4v3h4-4v3h4m7-6h-4v3h4-4v3h4m3 0v-6h3a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-3 2l2 3m3-6v6m3 0v-6l4 6v-6m7 0h-3a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v-3"
+			/>
+		</svg>
+		<span>Coming soon</span>
+	</body>
+</html>
